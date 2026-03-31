@@ -1,10 +1,12 @@
 {
   "name": "zenith-ai-server",
   "version": "1.0.0",
-  "description": "Zenith AI backend — shared key storage + API proxy",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "dependencies": {
     "cors": "^2.8.5",
