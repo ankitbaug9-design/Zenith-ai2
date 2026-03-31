@@ -17,7 +17,9 @@ const KEYS_FILE = path.join(__dirname, 'keys.json');
 app.use(cors());
 app.use(express.json());
 app.use(express.static(__dirname)); // serves Zenith_v6.html
-
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'Zenith_v6.html'));
+});
 // ── Key storage helpers ───────────────────────────────────────────────────────
 function loadKeys() {
   try { return JSON.parse(fs.readFileSync(KEYS_FILE, 'utf8')); }
