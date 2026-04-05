@@ -18,7 +18,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(__dirname)); // serves Zenith_v6.html
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Zenith_v6.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 // ── Key storage helpers ───────────────────────────────────────────────────────
 function loadKeys() {
